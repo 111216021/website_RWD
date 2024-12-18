@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林柏諺的個人部落格</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000040;
+        }
+        header {
+            background-image: url('assets/picture/1.jpg'); /* 替換為你的圖片網址 */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* 高度設定為視窗高度 */
+            color: white;
+            text-align: center;
+            display: flex; /* 中央對齊設定 */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #343a40;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #5b0202;
+            margin-top: 0;
+        }
+        .profile-img {
+            float: left;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        table th {
+            background-color: #5b0202;
+            color: white;
+        }
+        footer {
+            background-color: #5b0202;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 頁頭與導覽列 -->
+    <header>
+        <h1>林柏諺的個人部落格</h1>
+    </header>
+    <nav>
+        <a href="#section1">關於我</a>
+        <a href="#section2">工作經歷</a>
+        <a href="#section3">工作技能</a>
+        <a href="#section4">音樂作品推薦</a>
+        <a href="#section5">視訊作品推薦</a>
+        <a href="#section6">圖片作品推薦</a>
+        <a href="#section7">更多資訊</a>
+    </nav>
+    <main class="container">
+        <!-- Section 1: 關於我 -->
+        <section id="section1" class="section">
+            <h2>關於我</h2>
+            <img src="assets\picture\2.jpg" alt="Lin 的照片" class="profile-img">
+            <p></p>
+            <p><strong>林柏諺</strong><br>國立台北教育大學</p>
+            <p>愛好為欣賞與追求藝術，涵蓋古典音樂、繪畫與建築等</p>
+        </section>
+
+<!-- Section 2: 工作經歷 -->
+<section id="section2" class="section">
+    <h2>工作經歷</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>年份</th>
+                <th>單位</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024</td>
+                <td class="company">
+                    <div class="logo">
+                        <img src="assets/picture/berry_logo.jpg" alt="Berry AI Logo" width="40" height="40"> 
+                    </div>
+                    <div class="company-name">
+                        Berry AI 華捷智能
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td class="company">
+                    <div class="logo">
+                        <img src="assets/picture/garmin_logo.jpg" alt="Garmin Logo" width="40" height="40">
+                    </div>
+                    <div class="company-name">
+                        Garmin 台灣國際航電
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<style>
+    /* 使表格內容在y軸上垂直置中 */
+    td, th {
+        vertical-align: middle; /* 使單元格內容垂直居中 */
+    }
+
+    /* 設定年份欄位 */
+    .year {
+        text-align: center; /* 年份欄位的文字居中 */
+    }
+
+    /* 針對包含logo和文字的單元格進行額外調整 */
+    .company {
+        display: flex;
+        align-items: center; /* 使圖片與文字垂直居中 */
+    }
+
+    .company .logo {
+        margin-right: 10px; /* 圖片和文字之間的間距 */
+    }
+
+    .company-name {
+        display: inline-block;
+    }
+</style>
+
+
+       <!-- Section 3: 工作技能 -->
+<section id="section3" class="section">
+    <h2>工作技能</h2>
+    <ul class="skill-list">
+        <li>人工智慧開發與應用 <span class="stars">★★★★★</span></li>
+        <li>人工智能訓練與大數據統整 <span class="stars">★★★★★</span></li>
+    </ul>
+</section>
+
+<style>
+    /* 工作技能區塊 */
+
+    .skill-list li {
+        margin: 10px 0; /* 每項技能的間距 */
+        font-size: 1rem;
+        position: relative;
+    }
+
+    /* 小五角星樣式 */
+    .stars {
+        color: gold; /* 設定星星顏色為金黃色 */
+        font-size: 1.2rem; /* 星星大小 */
+        margin-left: 10px; /* 星星與標題之間的間距 */
+    }
+</style>
+
+      <!-- Section 4: 音樂作品推薦 -->
+<section id="section4" class="section">
+    <h2>音樂作品推薦</h2>
+
+    <div class="music-item">
+        <h3 onclick="toggleAudio('audio1')" class="dropdown-title">Maria Callas - Puccini: Madama Butterfly, Act 2: "Un bel dì, vedremo "
+            <span class="dropdown-icon"></span>
+        </h3>
+        <audio id="audio1" class="audio-content" controls style="display: none;">
+            <source src="assets/music/Callas.mp3" type="audio/mpeg">
+            
+        </audio>
+    </div>
+
+    <div class="music-item">
+        <h3 onclick="toggleAudio('audio2')" class="dropdown-title">Gabriel Fauré: The Pavane in F-sharp minor, Op. 50
+            <span class="dropdown-icon"></span>
+        </h3>
+        <audio id="audio2" class="audio-content" controls style="display: none;">
+            <source src="assets/music/Fauré.mp3" type="audio/mpeg">
+            
+        </audio>
+    </div>
+
+    <div class="music-item">
+        <h3 onclick="toggleAudio('audio3')" class="dropdown-title">Hilary Hahn - Sibelius: Violin Concerto in D Minor, Op. 47 - III. Allegro, ma non tanto
+            <span class="dropdown-icon"></span>
+        </h3>
+        <audio id="audio3" class="audio-content" controls style="display: none;">
+            <source src="assets/music/Hahn.mp3" type="audio/mpeg">
+            
+        </audio>
+    </div>
+</section>
+
+<script>
+    // 切換各音樂播放器的顯示或隱藏
+    function toggleAudio(audioId) {
+        const audio = document.getElementById(audioId);
+
+        // 切換播放器顯示或隱藏
+        if (audio.style.display === 'none' || audio.style.display === '') {
+            audio.style.display = 'block';
+        } else {
+            audio.style.display = 'none';
+            audio.pause(); // 隱藏時暫停播放
+        }
+    }
+</script>
+
+<style>
+    /* 音樂項目容器 */
+    .music-item {
+        position: relative; /* 定位基準 */
+        margin-bottom: 15px;
+    }
+
+    /* 小標題樣式 */
+    .dropdown-title {
+        cursor: pointer;
+        margin: 10px 0;
+        font-weight: normal; /* 保持字體樣式 */
+        position: relative;
+        padding-right: 20px; /* 預留空間 */
+    }
+
+    /* 倒三角符號設置 */
+    .dropdown-icon::after {
+        content: "▼";
+        font-size: 0.8em;
+        position: absolute;
+        right: 0; /* 靠右對齊父容器 */
+        top: 50%; /* 垂直居中 */
+        transform: translateY(-50%);
+        color: inherit; /* 繼承字體顏色 */
+    }
+
+    /* 音頻播放器樣式 */
+    .audio-content {
+        margin-top: 10px;
+    }
+</style>
+
+        <!-- Section 5: 視訊作品 -->
+        <section id="section5" class="section">
+            <h2>視訊作品推薦</h2>
+            <video controls width="850">
+                <h2>視訊作品推薦</h2>
+                <source src="assets\video\Mozart.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Section 6: 圖片作品 -->
+        <section id="section6" class="section">
+            <h2>圖片作品推薦</h2>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <img src="assets\picture\3.jpg" alt="圖片1" width="275">
+                <img src="assets\picture\4.jpg" alt="圖片2" width="275">
+                <img src="assets\picture\5.jpg" alt="圖片3" width="275">
+            </div>
+        </section>
+
+        <!-- Section 7: 更多資訊 -->
+        <section id="section7" class="section">
+            <h2>位址資訊</h2>
+
+    <!-- 嵌入 Google 地圖 -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8536118490025!2d121.54269577495184!3d25.02531313818366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a92ec97160cf%3A0x601d34a3e19f868b!2z5ZyL56uL5aSn5a24LeWPsOWMl-aok-aok-acieimlw!5e0!3m2!1szh-TW!2stw!4v1718803656789!5m2!1szh-TW!2stw" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<style>
+    /* 地圖容器樣式 */
+    .map-container {
+        margin-top: 15px;
+        border-radius: 8px; /* 地圖外框圓角 */
+        overflow: hidden; /* 確保圓角生效 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+    }
+</style>
+
+
+    <!-- 頁腳 -->
+    <footer>
+        聯絡我：<a href="https://mail.google.com/">s111216021@stu.ntue.edu.tw</a><br>
+        最後更新日期：2024年11月28日
+    </footer>
+</body>
+</html>
